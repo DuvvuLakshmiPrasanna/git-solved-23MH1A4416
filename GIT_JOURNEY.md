@@ -1,11 +1,11 @@
 # My Git Mastery Challenge Journey
 
 ## Student Information
-- Name: [Duvvu Lakshmi Prasanna]
-- Student ID: [23MH1A4416]
-- Repository: [https://github.com/DuvvuLakshmiPrasanna/git-solved-23MH1A4416]
-- Date Started: [26-10-2025]
-- Date Completed: [26-10-2025]
+- Name: Duvvu Lakshmi Prasanna
+- Student ID: 23MH1A4416
+- Repository: https://github.com/DuvvuLakshmiPrasanna/git-solved-23MH1A4416
+- Date Started: 26-10-2025
+- Date Completed: 26-10-2025
 
 ## Task Summary
 Cloned instructor's repository with pre-built conflicts and resolved all 
