@@ -5,8 +5,8 @@ A comprehensive CI/CD configuration management tool for enterprise deployments.
 ## Project Status
 - **Version**: 3.0.0-experimental
 - **Environments**: Production, Development & Testing
-- **Maintainer**: DevOps Innovation Team / [YOUR NAME]
-- **Student ID**: [YOUR ID]
+- **Maintainer**: DevOps Innovation Team / [Duvvu Lakshmi Prasanna]
+- **Student ID**: [23MH1A4416]
 
 ## Features
 
