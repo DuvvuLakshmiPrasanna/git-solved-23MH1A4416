@@ -1,79 +1,100 @@
 # System Architecture
 
 ## Overview
-DevOps Simulator follows a **microservices architecture** designed for high availability and scalability, with optional AI/ML integration for experimental builds. This document covers production, development, and experimental configurations.
+**DevOps Simulator** utilizes a **microservices-based architecture** built for high availability, scalability, and modular development. The system supports three modes: **Production**, **Development**, and **Experimental**. 
 
-**⚠️ Note:** Experimental features include cutting-edge AI/ML and multi-cloud orchestration, which are not fully tested.
+---
 
 ## Components
 
 ### 1. Application Server
-- **Technology**: Node.js + Express
-- **Production Port**: 8080
-- **Development Port**: 3000
-- **Experimental Ports**: 9000 (main), 9001 (metrics), 9002 (AI API)
-- **Scaling**:
-  - Production: Horizontal auto-scaling
-  - Experimental: AI-powered predictive auto-scaling
-- **Development Features**: Hot reload, debug mode
-- **Experimental Intelligence**: Real-time ML inference
-- **Message Queue (Experimental)**: Apache Kafka for event streaming
+- **Technology Stack**: Node.js with Express  
+- **Ports**:  
+  - Production: **8080**  
+  - Development: **3000**  
+  - Experimental: **9000 (Main)**, **9001 (Metrics)**, **9002 (AI API)**
+- **Scaling Strategy**:  
+  - Production: Horizontal auto-scaling  
+  - Experimental: AI-driven predictive auto-scaling
+- **Development Mode**: Hot reload and debug support  
+- **Experimental Enhancements**: Real-time ML inference and Kafka-based event streaming for high-throughput message handling  
+
+---
 
 ### 2. Database Layer
-- **Database**: PostgreSQL 14
-- **Production**: Master-slave replication with automated backups
-- **Development**: Single local instance with seed data
-- **Experimental Distributed DB**:
-  - PostgreSQL cluster (5 nodes)
-  - Redis cluster with ML-based cache optimization
-  - Multi-master replication
-  - Continuous geo-redundant backup
-  - AI features: query optimization, index suggestions
+- **Primary Database**: PostgreSQL 14  
+- **Production Configuration**:  
+  - Master-slave replication  
+  - Automated backup scheduling  
+- **Development Configuration**:  
+  - Single local instance with seeded test data  
+- **Experimental Configuration**:  
+  - Distributed PostgreSQL cluster (5 nodes)  
+  - Redis cluster with AI-assisted cache optimization  
+  - Multi-master replication and geo-redundant backups  
+  - ML-driven features for query optimization and index recommendations  
+
+---
 
 ### 3. AI/ML Pipeline (Experimental)
-- **Frameworks**: TensorFlow, PyTorch, Scikit-learn
-- **Models**: 
-  - Anomaly detection (LSTM neural network)
-  - Load prediction (XGBoost)
-  - Auto-scaling optimizer (Reinforcement Learning)
-- **Training**: Continuous online learning
-- **Inference**: Real-time predictions (<50ms latency)
+- **Frameworks**: TensorFlow, PyTorch, Scikit-learn  
+- **Model Types**:  
+  - LSTM-based anomaly detection  
+  - XGBoost-based load prediction  
+  - Reinforcement Learning–based auto-scaling optimizer  
+- **Training Mode**: Continuous online learning  
+- **Inference Performance**: Real-time predictions with <50ms latency  
+
+---
 
 ### 4. Monitoring System
-- **Production**: Prometheus + Grafana with email alerts
-- **Development**: Console logging with verbose output
-- **Experimental**:
-  - Metrics: Prometheus + Thanos (long-term storage)
-  - Logs: ELK Stack + AI log analysis
-  - Predictive monitoring, anomaly detection
+- **Production Monitoring**:  
+  - Prometheus + Grafana dashboards  
+  - Email-based alert notifications  
+- **Development Monitoring**:  
+  - Verbose console logging for debugging  
+- **Experimental Monitoring**:  
+  - Metrics via Prometheus + Thanos (for long-term retention)  
+  - Logging via ELK Stack with AI-powered log analysis  
+  - Predictive monitoring and anomaly detection capabilities  
+
+---
 
 ### 5. Multi-Cloud Orchestration (Experimental)
-- **Supported Clouds**: AWS, Azure, GCP, DigitalOcean
-- **Orchestrator**: Kubernetes with custom CRDs
-- **Load Balancing**: Global anycast with GeoDNS
-- **Failover**: Automatic cross-cloud failover
-- **Chaos Engineering**: Optional experimental tests
+- **Supported Cloud Providers**: AWS, Azure, GCP, DigitalOcean  
+- **Orchestration Platform**: Kubernetes with custom CRDs  
+- **Load Balancing**: Global Anycast with GeoDNS routing  
+- **Failover Mechanism**: Automated cross-cloud failover  
+- **Chaos Engineering**: Optional experiments to test resilience and recovery  
+
+---
 
 ## Deployment Strategy
 
 ### Production
-- **Method**: Rolling updates
-- **Zero-downtime**: Yes
-- **Rollback**: Automated on failure
-- **Region**: us-east-1
+- **Deployment Method**: Rolling updates  
+- **Downtime**: Zero-downtime deployment guaranteed  
+- **Rollback Mechanism**: Automatic rollback on failure  
+- **Primary Region**: `us-east-1`  
+
+---
 
 ### Development
-- **Method**: Docker Compose
-- **Features**: Hot reload, instant feedback
-- **Testing**: Automated tests before deployment
+- **Deployment Method**: Docker Compose  
+- **Key Features**: Hot reload and instant feedback loop  
+- **Testing Workflow**: Automated test suite executed before deployment  
+
+---
 
 ### Experimental
-- **Method**: Canary + multi-cloud deployment
-- **AI Optimization**: Enabled
-- **Monitoring**: Predictive with auto-rollback
-- **Dashboard**: https://ai.example.com
+- **Deployment Method**: Canary + multi-cloud rollout  
+- **AI Optimization**: Enabled for adaptive scaling and rollout control  
+- **Monitoring Approach**: Predictive analytics with auto-rollback on anomalies  
+- **Dashboard**: [https://ai.example.com](https://ai.example.com)  
+
+---
 
 ## Security
-- **Production**: SSL/TLS encryption, strict access controls
-- **Development**: Relaxed security for easier debugging
-- **Experimental**: AI-assisted security monitoring
+- **Production Environment**: Enforced SSL/TLS encryption and strict access control policies  
+- **Development Environment**: Relaxed security for ease of debugging and iteration  
+- **Experimental Environment**: AI-assisted security monitoring and threat detection  
