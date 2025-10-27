@@ -1,4 +1,4 @@
-# DevOps Simulator
+# DevOps Git Simulator - Duvvu Lakshmi Prasanna (23MH1A4416)
 
 A comprehensive CI/CD configuration management tool for enterprise deployments.
 
